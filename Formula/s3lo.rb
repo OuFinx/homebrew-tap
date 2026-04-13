@@ -5,21 +5,21 @@
 class S3lo < Formula
   desc "Use AWS S3 as a container image registry"
   homepage "https://github.com/OuFinx/s3lo"
-  version "1.10.0"
+  version "1.11.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/OuFinx/s3lo/releases/download/v1.10.0/s3lo_darwin_amd64.tar.gz"
-      sha256 "dd111b6d353beef1a6290edcb124e0941f40516f56f343855123e0b8d1ad5774"
+      url "https://github.com/OuFinx/s3lo/releases/download/v1.11.0/s3lo_darwin_amd64.tar.gz"
+      sha256 "9f3c520fdf69ad6723c15a252818eed309428951048bd120bc046b65b135d979"
 
       define_method(:install) do
         bin.install "s3lo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/OuFinx/s3lo/releases/download/v1.10.0/s3lo_darwin_arm64.tar.gz"
-      sha256 "bcafd84bb9ab958491d6d5a2bc8681044e1923321dbc09d5c42a7b11f2f97507"
+      url "https://github.com/OuFinx/s3lo/releases/download/v1.11.0/s3lo_darwin_arm64.tar.gz"
+      sha256 "dfcb86a6a3ae9cd5fb07f3fa283c47158d67e1aaabcfc0be59ef6a5295235f4d"
 
       define_method(:install) do
         bin.install "s3lo"
@@ -29,15 +29,15 @@ class S3lo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/OuFinx/s3lo/releases/download/v1.10.0/s3lo_linux_amd64.tar.gz"
-      sha256 "68a2b4c98a8f658df9618a49cb16b85a34341df65deeae27619e4b5d05aef991"
+      url "https://github.com/OuFinx/s3lo/releases/download/v1.11.0/s3lo_linux_amd64.tar.gz"
+      sha256 "0c328798df0bc0f4e3b66627a270b9bfea8985f444edc3b716594bfee9276244"
       define_method(:install) do
         bin.install "s3lo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/OuFinx/s3lo/releases/download/v1.10.0/s3lo_linux_arm64.tar.gz"
-      sha256 "9c3ed6113a9fa4c7ae2cd9851cdb09e39c1f0858efff593d11365c0d4f67b3fb"
+      url "https://github.com/OuFinx/s3lo/releases/download/v1.11.0/s3lo_linux_arm64.tar.gz"
+      sha256 "0958caf3d98c381ece8996a5383b35f2fee8acb63478a4f771cb6ccd70e44e75"
       define_method(:install) do
         bin.install "s3lo"
       end
