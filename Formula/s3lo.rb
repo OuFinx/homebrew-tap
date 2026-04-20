@@ -11,7 +11,7 @@ class S3lo < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/OuFinx/s3lo/releases/download/v1.13.0/s3lo_darwin_amd64.tar.gz"
-      sha256 "a6886fcf175e9348b7812ecc7b4878a5951cea389d043ead8bb6f08a96452ffe"
+      sha256 "971e2aa9f7d3de03774156eb3a73e5cf968078c3f41d92a4aa8634f9b6ad71be"
 
       define_method(:install) do
         bin.install "s3lo"
@@ -19,7 +19,7 @@ class S3lo < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/OuFinx/s3lo/releases/download/v1.13.0/s3lo_darwin_arm64.tar.gz"
-      sha256 "007aa3fbedded18d0dfc06b279cf566f2ba17092e3dd189627632d9b59aca8c4"
+      sha256 "b53c5bd76ab3551fb8ca2d647797abc530bb0464422030fea4634bdc87686d34"
 
       define_method(:install) do
         bin.install "s3lo"
@@ -30,14 +30,14 @@ class S3lo < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/OuFinx/s3lo/releases/download/v1.13.0/s3lo_linux_amd64.tar.gz"
-      sha256 "0a75fa7c0ae7a177724a74d3640bc365f443eb1d3c3a529569c154ec6b3dd7b2"
+      sha256 "7983752ba6c06fda094e775f2a7f3297cc78840be6b0814d5929c009945cbfeb"
       define_method(:install) do
         bin.install "s3lo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/OuFinx/s3lo/releases/download/v1.13.0/s3lo_linux_arm64.tar.gz"
-      sha256 "a6f5c72a8794ac3dc49e3c5e060f45cccd72afbcadb0b333d6818a54e04a937b"
+      sha256 "99ff6f863e3c487954bee94239acfcf8ce959bda2441c9fa9b6f9dd7f86ed8ad"
       define_method(:install) do
         bin.install "s3lo"
       end
